@@ -1,4 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Footer = styled.footer`
+  font-size: 11px;
+  text-align: center;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+`;
 
 function App() {
   return (
@@ -10,7 +19,7 @@ function App() {
         nisi nostrud deserunt. Elit duis laborum commodo ut exercitation commodo.
       </p>
 
-      <div className="attribution">
+      <Footer>
         Challenge by
         {' '}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>
@@ -19,7 +28,7 @@ function App() {
         {' '}
         <a href="https://www.abizmo.dev">Abián Izquierdo</a>
         .
-      </div>
+      </Footer>
     </>
   );
 }
