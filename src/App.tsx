@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { ReactComponent as Dice } from './assets/icon/dice.svg';
+import Button from './components/Button/Button';
+
 const Footer = styled.footer`
   font-size: 11px;
   text-align: center;
@@ -18,6 +21,7 @@ function App() {
         Qui elit cillum cillum Lorem qui excepteur ex elit enim exercitation ullamco
         nisi nostrud deserunt. Elit duis laborum commodo ut exercitation commodo.
       </p>
+      <Button icon={Dice} onClick={() => {}} />
 
       <Footer>
         Challenge by

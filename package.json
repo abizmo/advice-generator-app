@@ -82,5 +82,8 @@
     "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "webpack": "^5.72.1"
+  },
+  "overrides": {
+    "react-refresh": "0.11.0"
   }
 }
