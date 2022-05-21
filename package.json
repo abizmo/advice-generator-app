@@ -1,5 +1,6 @@
 {
   "name": "advice-generator-app",
+  "homepage": "https://abizmo.github.io/advice-generator-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -76,6 +79,7 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-storybook": "^0.5.12",
+    "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "webpack": "^5.72.1"
   },
