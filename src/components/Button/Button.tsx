@@ -14,6 +14,10 @@ const Btn = styled.button.attrs({ type: 'button' })`
   display: grid;
   place-content: center;
   width: 64px;
+
+  &:hover {
+    box-shadow: 0 0 16px 0 hsl(150, 100%, 66%);
+  }
 `;
 
 function Button({ icon: Icon, onClick }: ButtonProps): JSX.Element {
