@@ -1,8 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import { ReactComponent as Dice } from './assets/icon/dice.svg';
 import Button from './components/Button/Button';
+import { GlobalStyle } from './GlobalStyle';
+import theme from './GlobalStyle/theme';
 
 const Footer = styled.footer`
   font-size: 11px;
@@ -14,7 +16,8 @@ const Footer = styled.footer`
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <h1>Advice #117</h1>
 
       <p>
@@ -33,7 +36,7 @@ function App() {
         <a href="https://www.abizmo.dev">Abián Izquierdo</a>
         .
       </Footer>
-    </>
+    </ThemeProvider>
   );
 }
 
