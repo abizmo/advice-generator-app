@@ -1,6 +1,4 @@
-import { DefaultTheme } from 'styled-components';
-
-const theme: DefaultTheme = {
+const theme = {
   borderRadius: {
     500: '.25rem',
     round: '50%',
