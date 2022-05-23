@@ -7,16 +7,16 @@ type ButtonProps = {
 };
 
 const Btn = styled.button.attrs({ type: 'button' })`
-  aspect-ratio: 1 / 1;
-  background-color: hsl(150, 100%, 66%);
+  background-color: ${({ theme }) => theme.palette.primary.main};
   border: none;
-  border-radius: 50%;
+  border-radius: ${({ theme }) => theme.borderRadius.round};
   display: grid;
+  height: ${({ theme }) => theme.sizes[64]};
   place-content: center;
-  width: 64px;
+  width: ${({ theme }) => theme.sizes[64]};
 
   &:hover {
-    box-shadow: 0 0 16px 0 hsl(150, 100%, 66%);
+    box-shadow: 0 0 16px 0 ${({ theme }) => theme.palette.primary.main};
   }
 `;
 

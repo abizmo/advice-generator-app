@@ -5,13 +5,18 @@ import {
 
 import Button from './Button';
 import { ReactComponent as Dice } from '../../assets/icon/dice.svg';
+import Theme from '../../Theme';
 
 let handleClick: jest.Mock<any, any>;
 let button: Node;
 
 beforeEach(() => {
   handleClick = jest.fn();
-  render(<Button icon={Dice} onClick={handleClick} />);
+  render(
+    <Theme>
+      <Button icon={Dice} onClick={handleClick} />
+    </Theme>,
+  );
   button = screen.getByRole('button');
 });
 
