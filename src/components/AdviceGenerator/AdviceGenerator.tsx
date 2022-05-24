@@ -28,7 +28,6 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   color: ${({ theme }) => theme.palette.primary.main};
   font-size: .6875rem;
-  font-weight: 700;
   letter-spacing: .34rem;
   text-align: center;
   text-transform: uppercase;
@@ -37,7 +36,6 @@ const Title = styled.h1`
 const Body = styled.p`
   color: ${({ theme }) => theme.palette.primary.contrast};
   font-size: 1.5rem;
-  font-weight: 700;
   line-height: 1.5;
   text-align: center;
 `;
