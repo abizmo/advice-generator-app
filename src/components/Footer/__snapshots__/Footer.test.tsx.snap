@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render and MatchSnapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="sc-bczRLJ crYLLZ"
+  >
+    Challenge by 
+    <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Frontend Mentor
+    </a>
+    . Coded by 
+    <a
+      href="https://www.abizmo.dev"
+    >
+      Abián Izquierdo
+    </a>
+    .
+  </footer>
+</DocumentFragment>
+`;
