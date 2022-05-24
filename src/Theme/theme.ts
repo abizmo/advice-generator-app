@@ -1,6 +1,7 @@
 const theme = {
   borderRadius: {
     500: '.25rem',
+    700: '.75rem',
     round: '50%',
   },
   palette: {
