@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { ReactComponent as Dice } from '../../assets/icon/dice.svg';
-import { getAdvice } from '../../services/advices';
-import { Advice } from '../../types/advices';
+import useAdvice from '../../hooks/useAdvice';
 import Button from '../Button/Button';
 import Divider from '../Divider/Divider';
 
@@ -43,20 +42,8 @@ const Body = styled.p`
   text-align: center;
 `;
 
-const initialState: Advice = {};
-
 function AdviceGenerator() {
-  const [advice, setAdvice] = useState(initialState);
-
-  useEffect(() => {
-    getAdvice()
-      .then((data) => setAdvice(data));
-  }, []);
-
-  const handleClick = async () => {
-    getAdvice()
-      .then((data) => setAdvice(data));
-  };
+  const [advice, refreshAdvice] = useAdvice();
 
   return (
     <Wrapper>
@@ -71,7 +58,7 @@ function AdviceGenerator() {
 
       <Divider />
 
-      <Button icon={Dice} onClick={handleClick} />
+      <Button icon={Dice} onClick={() => refreshAdvice()} />
     </Wrapper>
   );
 }
