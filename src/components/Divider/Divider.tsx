@@ -6,7 +6,7 @@ import DesktopDivider from '../../assets/images/pattern-divider-desktop.svg';
 function Divider() {
   return (
     <picture>
-      <source srcSet={DesktopDivider} media="(min-width: 600px)" />
+      <source srcSet={DesktopDivider} media="(min-width: 31.5rem)" />
       <img src={MobileDivider} alt="divider" />
     </picture>
   );
