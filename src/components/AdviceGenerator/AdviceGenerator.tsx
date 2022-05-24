@@ -12,6 +12,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.sizes[24]};
+  margin: 0 auto;
+  max-width: 34rem;
   padding: 2.5rem 1.5rem 4rem;
   position: relative;
 
