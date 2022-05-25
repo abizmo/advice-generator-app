@@ -6,7 +6,7 @@ import useAdvice from '../../hooks/useAdvice';
 import Button from '../Button/Button';
 import Divider from '../Divider/Divider';
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   align-items: center;
   background-color: ${({ theme }) => theme.palette.common[700]};
   border-radius: ${({ theme }) => theme.borderRadius[700]};
