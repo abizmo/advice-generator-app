@@ -16,7 +16,8 @@ const Btn = styled.button.attrs({ type: 'button' })`
   width: ${({ theme }) => theme.sizes[64]};
 
   &:hover {
-    box-shadow: 0 0 16px 0 ${({ theme }) => theme.palette.primary.main};
+    box-shadow: 0 0 1.5rem 0 ${({ theme }) => theme.palette.primary.main};
+    cursor: pointer;
   }
 `;
 
