@@ -11,6 +11,10 @@ const resetCss = css`
     margin: 0;
     padding: 0;
   }
+
+  h1 {
+    line-height: 1.1;
+  }
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -21,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${theme.palette.primary.contrast};
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.5;
     height: 100vh;
   }
 
@@ -29,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     display: grid;
     grid-template-rows: 1fr min-content;
     height: 100vh;
-    padding: 1rem;
+    padding: ${theme.sizes[16]};
   }
 
   main {

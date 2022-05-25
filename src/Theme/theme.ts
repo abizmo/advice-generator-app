@@ -4,6 +4,11 @@ const theme = {
     700: '.75rem',
     round: '50%',
   },
+  fontSize: {
+    100: '.6875rem',
+    500: '1rem',
+    600: '1.5rem',
+  },
   palette: {
     common: {
       500: 'hsl(217, 19%, 38%)',

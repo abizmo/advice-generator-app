@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.footer`
-  font-size: 11px;
+  font-size: ${({ theme }) => theme.fontSize[100]};
   font-weight: 400;
   text-align: center;
 

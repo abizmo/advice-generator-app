@@ -1,36 +1,35 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.main`
-  align-items: center;
-  background-color: ${({ theme }) => theme.palette.common[700]};
-  border-radius: ${({ theme }) => theme.borderRadius[700]};
-  display: flex;
-  flex-direction: column;
-  gap: ${({ theme }) => theme.sizes[24]};
-  margin: 0 auto;
-  width: 100%;
-  max-width: 34rem;
-  padding: 2.5rem 1.5rem 4rem;
-  position: relative;
+export const Wrapper = styled.main(({ theme }) => ({
+  alignItems: 'center',
+  backgroundColor: theme.palette.common[700],
+  borderRadius: theme.borderRadius[700],
+  display: 'flex',
+  flexDirection: 'column',
+  gap: theme.sizes[24],
+  margin: '0 auto',
+  width: '100%',
+  maxWidth: '34rem',
+  paddingBottom: theme.sizes[64],
+  paddingInline: theme.sizes[24],
+  paddingTop: theme.sizes[40],
+  position: 'relative',
+  textAlign: 'center',
+  '& > button': {
+    position: 'absolute',
+    bottom: 0,
+    transform: 'translateY(50%)',
+  },
+}));
 
-  & > button {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(50%);
-  }
-`;
+export const Title = styled.h1(({ theme }) => ({
+  color: theme.palette.primary.main,
+  fontSize: theme.fontSize[100],
+  letterSpacing: '.34rem',
+  textTransform: 'uppercase',
+}));
 
-export const Title = styled.h1`
-  color: ${({ theme }) => theme.palette.primary.main};
-  font-size: .6875rem;
-  letter-spacing: .34rem;
-  text-align: center;
-  text-transform: uppercase;
-`;
-
-export const Body = styled.p`
-  color: ${({ theme }) => theme.palette.primary.contrast};
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: center;
-`;
+export const Body = styled.p(({ theme }) => ({
+  color: theme.palette.primary.contrast,
+  fontSize: theme.fontSize[600],
+}));
