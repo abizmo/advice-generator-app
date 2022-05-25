@@ -1,8 +1,8 @@
 import React from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { createGlobalStyle, css, ThemeProvider } from 'styled-components';
 import theme from './theme';
 
-export const GlobalStyle = createGlobalStyle`
+const resetCss = css`
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+`;
+
+export const GlobalStyle = createGlobalStyle`
+  ${resetCss}
 
   body {
     background-color: ${theme.palette.common[900]};
