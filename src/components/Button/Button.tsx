@@ -22,7 +22,7 @@ const Btn = styled.button.attrs({ type: 'button' })(({ theme }) => ({
 
 function Button({ icon: Icon, onClick }: ButtonProps): JSX.Element {
   return (
-    <Btn onClick={onClick}>
+    <Btn onClick={onClick} aria-label="generate">
       <Icon />
     </Btn>
   );
