@@ -17,7 +17,9 @@ function AdviceGenerator(): JSX.Element {
       </Title>
 
       <Body>
+        &ldquo;
         {advice.advice}
+        &rdquo;
       </Body>
 
       <Divider />
