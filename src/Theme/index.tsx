@@ -7,14 +7,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body, h1, h2, h3, p, ul {
+  body, h1, p {
     margin: 0;
     padding: 0;
-  }
-
-  'h1, h2, h3': {
-    font-weight: 500;
-    line-height: 1.1;
   }
 
   body {
@@ -22,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${theme.palette.primary.contrast};
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
+    line-height: 1.1;
     height: 100vh;
   }
 
