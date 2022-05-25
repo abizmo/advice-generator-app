@@ -24,7 +24,7 @@ export const Wrapper = styled.main(({ theme }) => ({
 
 export const Title = styled.h1(({ theme }) => ({
   color: theme.palette.primary.main,
-  fontSize: theme.fontSize[100],
+  fontSize: theme.fontSize[200],
   letterSpacing: '.34rem',
   textTransform: 'uppercase',
 }));

@@ -6,8 +6,9 @@ const theme = {
   },
   fontSize: {
     100: '.6875rem',
+    200: 'clamp(.6875rem, .25rem + 1.7vw, .8125rem)',
     500: '1rem',
-    600: '1.5rem',
+    600: 'clamp(1.5rem, .85rem + 2.5vw, 1.75rem)',
   },
   palette: {
     common: {
