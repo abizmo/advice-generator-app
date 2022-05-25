@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { ReactComponent as Dice } from '../../assets/icon/dice.svg';
+import useAdvice from '../../hooks/useAdvice';
 import Button from '../Button/Button';
 import Divider from '../Divider/Divider';
 
@@ -27,7 +28,6 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   color: ${({ theme }) => theme.palette.primary.main};
   font-size: .6875rem;
-  font-weight: 700;
   letter-spacing: .34rem;
   text-align: center;
   text-transform: uppercase;
@@ -36,24 +36,27 @@ const Title = styled.h1`
 const Body = styled.p`
   color: ${({ theme }) => theme.palette.primary.contrast};
   font-size: 1.5rem;
-  font-weight: 700;
   line-height: 1.5;
   text-align: center;
 `;
 
 function AdviceGenerator() {
+  const [advice, refreshAdvice] = useAdvice();
+
   return (
     <Wrapper>
-      <Title>Advice #117</Title>
+      <Title>
+        Advice #
+        {advice.id}
+      </Title>
 
       <Body>
-        Qui elit cillum cillum Lorem qui excepteur ex elit enim exercitation ullamco
-        nisi nostrud deserunt. Elit duis laborum commodo ut exercitation commodo.
+        {advice.advice}
       </Body>
 
       <Divider />
 
-      <Button icon={Dice} onClick={() => { }} />
+      <Button icon={Dice} onClick={() => refreshAdvice()} />
     </Wrapper>
   );
 }

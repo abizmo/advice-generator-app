@@ -6,6 +6,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${theme.palette.common[900]};
     color: ${theme.palette.primary.contrast};
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
   }
 `;
 
